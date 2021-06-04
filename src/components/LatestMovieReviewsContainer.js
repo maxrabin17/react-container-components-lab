@@ -25,7 +25,7 @@ class LatestMovieReviewsContainer extends Component {
                     review => ({
                         name: review.display_title,
                         byline: review.byline,
-                        headline: review.headline,
+                        image: review.multimedia.src,
                         link: review.link.url,
                         summary: review.summary_short,
                     })

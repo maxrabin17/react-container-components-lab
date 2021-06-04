@@ -1,11 +1,13 @@
 import React from 'react'
 
-const MovieReview = (props) => {
-    // keyIndex, name, byline, headline, link, summary
-    console.log(props)
+const MovieReview = ({name, summary, byline, image, link, keyIndex}) => {
+    // console.log()
     return (
-        <div key={this.props.keyIndex} className="review">
-        
+        <div className="review" key={keyIndex}>
+            <h4>{name} --- By: {byline}</h4>
+            <img src={image}/>
+            <a href={link}>{link}</a>
+            <p>{summary}</p>
         </div>
     )
 }
